@@ -18,7 +18,7 @@ export class CartComponent implements OnInit {
   onSubmit(): void {
     // processa a compra
     this.items = this.cartService.clearCart();
-    console.warn("Sua compra foi submetida!");
+    console.warn("Sua compra foi submetida!", this.checkoutForm.value);
     this.checkoutForm.reset();
   }
 
